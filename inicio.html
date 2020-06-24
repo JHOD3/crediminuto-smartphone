@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crediminuto</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Crediminutos -->
+    <link rel="stylesheet" href="css/crediminutos.css">
+</head>
+
+<body>
+    
+    
+    <main>
+        <form action=""  id="login">
+        <div class="d-md-flex">
+            <div class="col-md-5 lateral-bar px-0" id="inicio-form">
+                <div class="border-bottom col-md-9 mx-auto d-md-none d-block">
+                    <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-block">
+                </div>
+               
+                    <h5 class="inicio-text-1">
+                        ¿Ya has elegido <br>
+                        tu próximo <br>
+                        smartphone?
+                    </h5>
+                    <h5 class="text-danger inicio-text-2">
+                        ¡Te lo <br>
+                        financiamos!
+                    </h5>
+                    
+
+                    <div>
+                        <img src="img/svg/men-phone.svg" alt="" class="img-1 d-block">
+                    </div>
+                
+             
+                <div class="d-md-none d-block text-center pt-2">
+                    <button class="btn btn-danger btn-rounded col-8 d-block mx-auto position-absolute botton-btn left-0 right-0" id="btn-comencemos">¡Comencemos!</button>
+                </div>
+            </div>
+            <div class="col-md-7 d-none d-md-block" id="inicio-content">
+                <div class="border-bottom col-md-9 mx-auto">
+                    <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-md-none d-block">
+                </div>
+
+                <div class="text-center content-title">
+                    <h5>¡Bienvenido!</h5>
+                    <p>¿Ya estás registrado? <a href="#" class="text-danger">Clic aquí</a></p>
+                </div>
+                
+                <!-- Medium input center text -->
+                <div class="md-form col-md-7 mx-auto text-center label-text-center">
+                    <input type="email" id="email" name="email" class="form-control text-center is-valid" autocomplete="off" >
+                    <label for="email">Correo electrónico</label>
+                </div>
+
+                <!-- Medium input center text -->
+                <div class="md-form col-md-7 mx-auto text-center label-text-center">
+                    <input type="password" id="password" name="password" minlength="6" class="form-control text-center is-valid" autocomplete="off" >
+                    <label for="password">Contraseña</label>
+                    <small class="valid-feedback text-muted"> Mínimo 6 caractares</small>
+                </div>
+                
+                <button class="btn btn-danger btn-rounded mx-auto d-block col-md-3 col-6 mt-d px-0" id="btn-continuar">Empezar</button>
+                    
+               
+                <div class="col-md-6 col-11 mx-auto border-bottom mt-linea-1"></div>
+                <div class="align-items-center d-flex col-md-5 col-10 mx-auto px-0 mt-social-ico-1 justify-content-center" >
+                    <span>Ó registrate con</span>
+                    <embed src="img/svg/icono-google.svg" type="" class="iconos-sociales ml-3">
+                    <embed src="img/svg/icono-facebook.svg" type="" class="iconos-sociales ml-3">
+                </div>
+                <div class="col-md-6 mx-auto text-center mt-5">
+                    <!-- Default checked -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultChecked2">
+                        <label class="custom-control-label font12-px" for="defaultChecked2">Acepto <a href="#" class="text-muted"><u>Términos y Condiciones</u></a></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    </main>
+    
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- jquery validator -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" ></script>
+   
+    <script>
+        $('#btn-comencemos').on('click',function (event) {
+            event.preventDefault();
+            $('#inicio-content').removeClass('d-none');
+            $('#inicio-form').addClass('d-none');
+        });
+    </script>
+    <script>
+        (function() {
+            if(screen.width > 768){
+                var body =   document.querySelector('body');
+                body.innerHTML= '<div class="mx-auto col-4 justify-content-center" style="display: grid;margin-top: 40vh;">'+
+                                    '<h3>!Error 404¡</h3> '+
+                                    '<br> <p>Solo puede acceder a este contenido <br> '+
+                                    'desde in dispositivo movil.</p>'+
+                                '</div>';
+            }
+        })();
+    </script>
+</body>
+</html>
