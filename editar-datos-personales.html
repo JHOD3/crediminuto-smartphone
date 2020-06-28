@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crediminuto</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Crediminutos -->
+    <link rel="stylesheet" href="css/crediminutos.css">
+</head>
+
+<body>
+    
+    
+    <main>
+        <form action=""  id="form-datos-personales">
+            <div class="d-md-flex">
+                <div class="col-md-7" id="inicio-content">
+                    <div class="border-bottom col-md-9 mx-auto">
+                        <a href="">
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+                        <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-md-none d-block">
+                    </div>
+
+                    <div class="text-center content-title">
+                        <h5>Datos personales</h5>
+                    </div>
+                    <!-- Medium input text -->
+                    <div class="md-form col-md-6 pl-md-0 mx-auto credimunuto-label mt-5">
+                        <input type="text" id="nombre" name="nombre" class="form-control input-text-indent text-indent is-valid" autocomplete="off" minlength="5" value="Miguel Roberto" >
+                        <label for="nombre">Nombre/s</label>
+                    </div>
+                    <!-- Medium input text -->
+                    <div class="md-form col-md-6 pl-md-0 mx-auto credimunuto-label mt-5">
+                        <input type="text" id="apellido" name="apellido" class="form-control input-text-indent text-indent is-valid" autocomplete="off" minlength="5" value="Gorostarzu">
+                        <label for="apellido">Apellidos/s</label>
+                    </div>
+                    <!-- Medium input text -->
+                    <div class="md-form col-md-6 pl-md-0 mx-auto credimunuto-label mt-5">
+                        <input type="text" id="cedula" name="cedula" class="form-control input-text-indent text-indent is-valid" autocomplete="off" minlength="5" value="12345678900">
+                        <label for="cedula">Cédula de ciudadanía</label>
+                    </div>
+                    
+                </div>
+                <div class="d-flex justify-content-center position-absolute" style="left: 0;right: 0;bottom: 10vh;">
+                    <a href="editar-datos-personales.html" type="button" class="btn btn-outline-danger btn-rounded col-5 mr-4 py-3">Editar</a>
+                    <a href="numero-telefono.html" class="btn btn-danger btn-rounded col-5 py-3"  type="button" >Continuar</a>
+                </div>
+            </div>
+        </form>
+    </main>
+    
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- jquery validator -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" ></script>
+    
+    <!-- Validation -->
+    <script src="js/crediminuto-validaciones.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crediminuto</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Crediminutos -->
+    <link rel="stylesheet" href="css/crediminutos.css">
+    <!-- Ow Carrusel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css">
+</head>
+
+<body>
+    
+    
+    <main>
+        <form action=""  id="form-inicio">
+        <div class="d-md-flex">
+            <div id="captura-content" class="captura-content">
+                <div id="captura-section-1">
+                    <h5 class="text-center text-white">
+                        ¿Nos das permiso para usar <br>
+                        la cámara de tu dispositivo?
+                    </h5>
+                    <button class="btn btn-danger btn-rounded col-10 mx-auto d-block mt-5 captura-permiso-btn" onclick="webcam('play')">Otorgar permiso</button>
+                </div>
+                <div id="captura-section-2" class="d-none">
+                    <h5 class="text-center text-white">
+                        Por último necesitamos una <br>
+                        selfie con tu cédula en mano
+                     </h5>
+                     
+                    <video class="border border-white rounded col-9 mx-auto mt-3 px-0 d-block" autoplay="" id="webcam" style="padding: 0 0;height: 228px;width: 300px;"></video>
+                     
+                     <small class="text-center text-white d-block mx-auto mt-3 pb-5">
+                        Es para confirmar que sos la misma <br>
+                        persona que figura en la cédula (no la <br>
+                        vamos a publicar en ningún lado) 
+                     </small>
+                     <a class="btn-floating btn-lg btn-default mx-auto d-block mt-5" style="background: white !important;" id="final-selfie" onclick="webcam('pause')"><i class="fas fa-bolt"></i></a>
+                </div>
+                <div class="modal fade bottom" id="frameModalBottomSuccessDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="true" data-gtm-vis-first-on-screen-2340190_1302="441473" data-gtm-vis-total-visible-time-2340190_1302="100" data-gtm-vis-has-fired-2340190_1302="1" style="display: none;"aria-hidden="true">
+                    <div class="modal-dialog modal-frame modal-bottom modal-notify modal-success" role="document" style="bottom: 0;bottom: 0vh;margin: 0;height: 100vw;position: absolute;width: 100vw;max-width: 100vw;">
+                        <!--Content-->
+                        <div class="modal-content" style="height: 100vw;bottom: 0;position: absolute;">
+                            <!--Body-->
+                            <div class="modal-body">
+                                <div>
+                                    <div class="owl-carousel owl-theme" id="owl-carousel-1">
+                                        <div class="item text-center px-3">
+                                            
+                                            <h5 class="text-center">
+                                                Consejos para una <br>
+                                                correcta verifiación
+                                            </h5>
+                                            <embed src="img/svg/cedula.svg" type="" class="mx-auto d-block my-vw-1" style="width: 160px;">
+                                            <button class="btn btn-danger btn-rounded col-10" id="consejos-btn">Siguiente</button>
+                                        </div>
+                                        <div class="item text-center px-3">
+                                            <h5 class="text-danger">Buena iluminación</h5>
+                                            <p>Busca un lugar con buena iluminación, no
+                                                uses el flash. Los reflejos pueden obstruir la
+                                                información de tu cédula.</p>
+                                            <img src="img/svg/icono-1.svg" alt="" class="icono-slider mx-auto my-vw-1">
+                                        </div>
+                                        <div class="item text-center px-3">
+                                            <h5 class="text-danger">Imágen nítida</h5>
+                                            <p>La foto debe verse nítida para una correcta
+                                                lectura de los datos. Cuidar que no se
+                                                encuentre borrosa.</p>
+                                            <img src="img/svg/icono-2.svg" alt="" class="icono-slider mx-auto my-vw-1">
+                                        </div>
+                                        <div class="item text-center px-3">
+                                            <h5 class="text-danger">Encuadre correcto</h5>
+                                            <p>Cuidar que la misma se lea bien y la cédula
+                                                se encuentre en su totalidad dentro del
+                                                marco de la foto</p>
+                                            <img src="img/svg/icono-3.svg" alt="" class="icono-slider mx-auto my-vw-1">
+                                            <button class="btn btn-danger btn-rounded col-10 mx-auto d-block mt-5" id="sacar-foto" >Sacar foto</button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Content-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    </main>
+    
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Ow Carrusel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- jquery validator -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" ></script>
+    <script src="js/crediminuto-validaciones.js"></script>
+    <script>
+            $('#owl-carousel-1').owlCarousel({
+                loop:false,
+                margin:20,
+                autoplay:false,
+                autoplayHoverPause:true,
+                dots:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:1
+                    }
+                }
+            });
+
+            var video = document.querySelector('#webcam');
+
+            function webcam(btn) {
+                if(btn == 'pause') {
+                    video.pause();
+                    console.log(video);
+                    
+
+                } else {
+                    video.play();
+                }
+            }
+
+            if (navigator.mediaDevices.getUserMedia) {
+                navigator.mediaDevices.getUserMedia({
+                    video:true
+                })
+                .then(function(stream) {
+                video.srcObject = stream;
+                })
+                .catch(function(e) {
+                console.log(e);
+                });
+            }
+    </script>
+</body>
+</html>

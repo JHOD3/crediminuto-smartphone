@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crediminuto</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Select 2 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/select2-bootstrap.css">
+    <!-- Crediminutos -->
+    <link rel="stylesheet" href="css/crediminutos.css">
+</head>
+
+<body>
+    
+    
+    <main>
+        <form action=""  id="form-aceptada">
+            <div class="d-md-flex">
+                <div class="col-md-7" id="inicio-content" style="overflow-y: auto;height: 130vw;">
+                    <div class="border-bottom col-md-9 mx-auto">
+                        <a href="">
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+                        <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-md-none d-block">
+                    </div>
+
+                    <div class="text-center content-title">
+                        <h5>¿Dónde vives?</h5>
+                        <p>
+                            Ingresá el domicilio donde vives.<br>
+                            No es necesario que coincida con tu cédula.
+                        </p>
+                    </div>
+                    <div class="fondo-mapa"></div>
+                    <div class="col-md-7 mx-auto my-4"></div>
+                    <!-- Small input -->
+                    <div class="input-group col-md-8 mx-auto mb-2 mt-5 d-flex mb-5">
+                        <div class="input-group-prepend col-md-1 col-2 px-0">
+                            <div class="input-group-text border-right-0 ml-auto" style="background: none;">
+                                <i class="fas fa-home"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-11 col-10 px-0">
+                            <input type="text" name="localizacion" id="localizacion"  class="form-control form-control-lg py-0 border-left-0 js-example-basic-multiple" id="inlineFormInputGroupUsername2" placeholder="Comodoro Rivadavia 177">
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="d-flex justify-content-center position-absolute" style="left: 0;right: 0;bottom: 5vh;">
+                    <a href="donde-vives-2.html" class="btn btn-danger btn-rounded col-10 py-3"  type="button" >Continuar</a>
+                </div>
+            </div>
+        </form>
+    </main>
+  
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- jquery validator -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" ></script>
+    <!-- Select 2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/js/select2.full.min.js"></script>
+        <!-- Libreria español -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/i18n/es.js"></script>  
+    <!-- Validation -->
+    <script src="js/crediminuto-validaciones.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crediminuto</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Select 2 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/select2-bootstrap.css">
+    <!-- Crediminutos -->
+    <link rel="stylesheet" href="css/crediminutos.css">
+</head>
+
+<body>
+    
+    
+    <main>
+        
+        <div class="captura-content">
+            <h5 class="text-center text-white">
+                Por último necesitamos una <br>
+                selfie con tu cédula en mano
+             </h5>
+             
+            <video class="border border-white rounded col-9 mx-auto mt-3 px-0 d-block" autoplay="" id="webcam" style="padding: 0 0;height: 228px;width: 300px;"></video>
+             
+             <small class="text-center text-white d-block mx-auto mt-3 pb-5">
+                Es para confirmar que sos la misma <br>
+                persona que figura en la cédula (no la <br>
+                vamos a publicar en ningún lado) 
+             </small>
+             <a class="btn-floating btn-lg btn-default mx-auto d-block mt-5" style="background: white !important;" id="final-selfie" onclick="webcam('pause')"><i class="fas fa-bolt"></i></a>
+        </div>
+       
+    </main>
+  
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- jquery validator -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" ></script>
+    <!-- Select 2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/js/select2.full.min.js"></script>
+        <!-- Libreria español -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/i18n/es.js"></script>  
+    <!-- Validation -->
+    <script src="js/crediminuto-validaciones.js"></script>
+    <script>
+        var video = document.querySelector('#webcam');
+
+        function webcam(btn) {
+            if(btn == 'pause') {
+                video.pause();
+                console.log(video);
+                
+
+            } else {
+                video.play();
+            }
+        }
+
+        if (navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({
+                video:true
+            })
+            .then(function(stream) {
+            video.srcObject = stream;
+            })
+            .catch(function(e) {
+            console.log(e);
+            });
+        }
+    </script>
+</body>
+</html>

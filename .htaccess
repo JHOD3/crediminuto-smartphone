@@ -1,0 +1,5 @@
+# Forzar a que siempre salga la URL con https (cuando tenemos un error 301)
+RewriteEngine On
+RewriteCond %{ENV:HTTPS} !on [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://cm-smartphone.localll/$1 [R=301,L,NE]

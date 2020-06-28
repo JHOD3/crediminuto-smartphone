@@ -107,7 +107,7 @@
         </div>
         <div class="imageuploadify-images-list-btn d-flex m-auto align-items-center" id="imageuploadify-images-list-btn" >
           <a type="button" id="btn-agregar-mas" class="btn-floating btn-sm btn-success" style="background: #15ea84;box-shadow: none;padding-top: 8px;margin: 0 13px 0px 0px;"><i class="fas fa-plus" style="line-height: 21px!important;color: rgb(255, 255, 255);"></i></a>
-          <span class='imageuploadify-message text-muted border-0 font14-px text-left' style="line-height: 16px;" id="texto-agregar">Selecciona o arrastra <br> tus archivos JPG o PNG</span>
+          <span class='imageuploadify-message text-muted border-0 font14-px text-left' style="line-height: 16px;" id="texto-agregar">Selecciona tus <br> archivos JPG o PNG</span>
         </div>
         
       </div>
@@ -183,7 +183,9 @@
             let image = $("<img>");
             // Paste the image source to display the image preview.
             // image.attr("src", e.target.result);
-
+           
+           
+            
             // Append the image to its container and then the container to the
             // list of files.
             container.append(image);
@@ -210,7 +212,8 @@
               'border': '1px solid #15EA84',
               
             });
-           
+            $('.btn-continuar').prop('disabled', false);        // enables button
+            $('.btn-continuar').addClass('btn-danger').removeClass('btn-light disabled');
             // Apply left margin to first container of each row and right to last.
             // imagesList.find(".imageuploadify-container:nth-child(" + boxesNb + "n+4)").css("margin-left", marginSize + "px");
             // imagesList.find(".imageuploadify-container:nth-child(" + boxesNb + "n+3)").css("margin-right", marginSize + "px");
@@ -254,6 +257,13 @@
           $(this.parentElement).remove();
           for (let index = 0; totalFiles.length > index; ++index) {
             if (totalFiles[index].id === id) {
+              if (index < 1) {
+                $('.btn-continuar').prop('disabled', true);        // enables button
+                $('.btn-continuar').addClass('btn-light disabled').removeClass('btn-danger');
+              }else{
+                $('.btn-continuar').prop('disabled', false);        // enables button
+                $('.btn-continuar').addClass('btn-danger').removeClass('btn-light disabled');
+              }
               totalFiles.splice(index, 1);
               break;    
             }

@@ -702,11 +702,10 @@ li.my-1 {
         margin-top: 9.422492401215806vw;
     }
 
+    .text-indent{
+        text-indent: 19px !important;
+    }
 
-
-
-
-    
     .content-btn-continuar {
         position: relative;
         left: 0;
@@ -775,7 +774,7 @@ li.my-1 {
         width: 11.398176291793312vw;
     }
     .form-control {
-        font-size: 3.7993920972644375vw;
+        font-size: 4.25531914893617vw;
     }
     .mt-linea-1 {
         margin-top: 18.84498480243161vw;
@@ -791,8 +790,10 @@ li.my-1 {
         padding-top: 5.319148936170213vw;
     }
     .credimunuto-label label {
-        -webkit-transform: translateY(12px) translateX(20px);
-        transform: translateY(0.966183574879227vw) translateX(20px);
+        transform: translateY(6.966184vw) translateX(20px);
+    }
+    .credimunuto-label label.active {
+        transform: translateY(15px) scale(1) translateX(20px);
     }
     h5{
         font-size: 6.280193236714976vw;
@@ -868,7 +869,77 @@ li.my-1 {
     .font12-px{
         font-size: 3.3333333333333335vw;
     }
-
+    .icono-upload-file{
+        width: 12.917933130699089vw;
+        height: 10.030395136778116vw;
+    }
+    .content-upload-file {
+        margin-top: 10.030395136778116vw;
+        margin-bottom: 10.030395136778116vw;
+    }
+    .mt-content-upload{
+        padding-top: 7.598784194528875vw;
+    }
+    .my-vw-1 {
+        margin: 7vw 0;
+    }
+    .my-vw-2 {
+        margin: 15vw 0;
+    }
+    .owl-dots {
+        margin-top: -14vw !important;
+    }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        background: #D8143B;
+    }
+    .modal-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1040;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+    }
+    .captura-content {
+        background: #444242;
+        height: 100vh;
+        padding-top: 10vh;
+    }
+    .my-upload-file{
+        margin: 8.51063829787234vw 0;
+    }
+    input:disabled{
+        border-bottom: none !important;
+    }
+    .select-wrapper span.caret {
+        position: absolute;
+        top: 1.8rem;
+        right: 30px;
+        font-size: 0.63rem;
+        color: #c22645;
+    }
+    .fa-arrow-left{
+        position: absolute;
+        font-size: 6vw;
+        color: #d8143b;
+        margin-top: 1.5vh;
+        margin-left: 2vh;
+    }
+    .caritas{
+        width: 10.638297872340425vw;
+    }
+    .iconos-status{
+        width: 17.173252279635257vw;
+    }
+    .img-rechazado {
+        width: 27.203647416413375vw;
+        margin: 5.775075987841945vw 0 9.72644376899696vw 0;
+    }
+    .bar-code {
+        width: 75.51215805471125vw;
+        margin-top: 7vw;
+    }
 
 }
 @media (min-width: 576px){
