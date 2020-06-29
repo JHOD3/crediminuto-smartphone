@@ -16139,8 +16139,7 @@ li.my-1 {
 
   ::-webkit-scrollbar {
     width: 3px;
-    background-color: #F5F5F5;
-    display: none; }
+    background-color: #F5F5F5; }
 
   .content-title {
     margin-top: 9.422492401215806vw; }
