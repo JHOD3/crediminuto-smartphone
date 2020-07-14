@@ -133,7 +133,8 @@
           if (!accept || compareMimeType(result, files[index].type, /(?:\.([^.]+))?$/.exec(files[index].name)[1])) {
             // Unique number to save the image.
             const id = Math.random().toString(36).substr(2, 9);
-
+            $('.btn-continuar').prop('disabled', false);        // enables button
+            $('.btn-continuar').addClass('btn-danger').removeClass('btn-light disabled');
             readingFile(id, files[index]);
             totalFiles.push({
               id:   id,
@@ -183,6 +184,7 @@
             let image = $("<img>");
             // Paste the image source to display the image preview.
             // image.attr("src", e.target.result);
+         
            
            
             
@@ -376,7 +378,7 @@
               $(containers[index]).css("margin-right", "0px");
               $(containers[index]).css("margin-left", marginSize + "px");
             }
-
+           
             // Apply left margin to first container of each row and right to last.
             imagesList.find(".imageuploadify-container:nth-child(" + boxesNb + "n+4)").css("margin-left", marginSize + "px");
             imagesList.find(".imageuploadify-container:nth-child(" + boxesNb + "n+3)").css("margin-right", marginSize + "px");
@@ -407,11 +409,13 @@
             const options = inputs[index].options;
             for (let i = 0; options.length > i; ++i) {
               if (options[i].selected) {
+
                 formData.append(inputs[index].getAttribute("name"), options[i].value);
               }
             }
           }
           else if (!inputs[index].getAttribute("type") || ((inputs[index].getAttribute("type").toLowerCase()) !== "checkbox" && (inputs[index].getAttribute("type").toLowerCase()) !== "radio") || inputs[index].checked) {
+            console.log('aqui');
             formData.append(inputs[index].name, inputs[index].value);
           }
           else if ($(inputs[index]).getAttribute("type") != "file") {

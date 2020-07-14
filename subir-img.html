@@ -20,13 +20,44 @@
     <main>
         <form action=""  id="form-subir-imagen">
             <div class="d-md-flex">
+                <div class="col-md-5 lateral-bar px-0 d-md-block d-none" id="inicio-form">
+                    <div class="border-bottom col-md-9 mx-auto d-md-none d-block">
+                        <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-block">
+                    </div>
+                   
+                        <h5 class="inicio-text-1 text-md-center">
+                            ¿Ya has elegido <br class="d-md-none">
+                            tu <br class="d-md-block d-none"> próximo <br class="d-md-none">
+                            smartphone?
+                        </h5>
+                        <h5 class="text-danger inicio-text-2 text-md-center mt-md-3 ">
+                            ¡Te lo <br class="d-md-none">
+                            financiamos!
+                        </h5>
+                        
+    
+                        <div>
+                            <img src="img/svg/men-phone.svg" alt="" class="mx-md-auto img-1 d-block">
+                        </div>
+                    
+                 
+                    <div class="d-md-none d-block text-center pt-2">
+                        <button class="btn btn-danger btn-rounded col-8 d-block mx-auto position-absolute botton-btn left-0 right-0" id="btn-comencemos">¡Comencemos!</button>
+                    </div>
+                </div>
+
+                
                 <div class="col-md-7" id="inicio-content">
-                    <div class="border-bottom col-md-9 mx-auto">
+                    <div class="border-bottom col-md-9 mx-auto d-md-none d-block">
                         <a href="">
                             <i class="fas fa-arrow-left"></i>
                         </a>
                         <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-md-none d-block">
                     </div>
+                    <div class="border-bottom col-md-9 mx-auto d-none d-md-block">
+                        <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-block">
+                    </div>
+                   
 
                     <div class="text-center content-title">
                         <h5>Tu Cédula</h5>
@@ -36,12 +67,20 @@
                             más reciente de tu cédula de ciudadanía.
                         </p>
                     </div>
-                    <div class="col-10 mx-auto my-upload-file">
+                    <div class="col-10 col-md-6 mx-auto my-upload-file">
                         <input type="file" name="cedula-file" multiple>
                     </div>
-                    
+                    <div class="col-md-6 mx-auto mt-3 d-md-flex d-none">
+                        <embed src="img/svg/cedula.svg" type="" class="img-upload-cedula mr-3">
+                        <span class="font11-px">
+                            Que sea una imagen nítida, <br class="d-md-block d-none">   
+                            con buena iluminación <br class="d-md-block d-none">
+                            y correcto encuadre
+                        </span>    
+                    </div>
+                    <a href="datos-personales.html" class="btn btn-light btn-rounded sw-btn-next mx-auto col-md-6 col-10 btn-continuar position-absolute disabled d-none d-md-block"  type="button" style="bottom: 35px;" disabled>Siguiente</a>
                 </div>
-                <a href="datos-personales.html" class="btn btn-light btn-rounded sw-btn-next mx-auto d-block col-md-6 col-10  btn-continuar position-absolute disabled"  type="button" style="bottom: 35px;" disabled>Siguiente</a>
+                <a href="datos-personales.html" class="btn btn-light btn-rounded sw-btn-next mx-auto d-block col-md-6 col-10 btn-continuar position-absolute disabled d-md-none d-block"  type="button" style="bottom: 35px;" disabled>Siguiente</a>
             </div>
         </form>
     </main>

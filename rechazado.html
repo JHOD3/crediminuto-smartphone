@@ -17,24 +17,52 @@
     
     <main>
         <div class="d-md-flex">
-            <div class="col-md-7" id="inicio-content">
-                <div class="border-bottom col-md-9 mx-auto">
+            <div class="col-md-5 lateral-bar px-0 d-md-block d-none" id="inicio-form">
+                <div class="border-bottom col-md-9 mx-auto d-md-none d-block">
+                    <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-block">
+                </div>
+               
+                    <h5 class="inicio-text-1 text-md-center">
+                        ¿Ya has elegido <br class="d-md-none">
+                        tu <br class="d-md-block d-none"> próximo <br class="d-md-none">
+                        smartphone?
+                    </h5>
+                    <h5 class="text-danger inicio-text-2 text-md-center mt-md-3 ">
+                        ¡Te lo <br class="d-md-none">
+                        financiamos!
+                    </h5>
+                    
+
+                    <div>
+                        <img src="img/svg/men-phone.svg" alt="" class="mx-md-auto img-1 d-block">
+                    </div>
+                
+             
+                <div class="d-md-none d-block text-center pt-2">
+                    <button class="btn btn-danger btn-rounded col-8 d-block mx-auto position-absolute botton-btn left-0 right-0" id="btn-comencemos">¡Comencemos!</button>
+                </div>
+            </div>
+            <div class="col-md-7 content-aceptada" id="inicio-content">
+                <div class="border-bottom col-md-9 mx-auto d-md-none d-block">
                     <a href="">
                         <i class="fas fa-arrow-left"></i>
                     </a>
                     <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-md-none d-block">
                 </div>
+                <div class="border-bottom col-md-9 mx-auto d-none d-md-block">
+                    <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-block">
+                </div>
 
                 <div class="text-center content-title">
                     <h5>Lo lamentamos</h5>
                 </div>
-                <embed src="img/svg/rechazada.svg" type="" class="img-rechazado mx-auto d-block mt-8">
-                <p class="text-center mt-3">
-                    La solicitud ha sido rechazada <br> 
-                    por el momento.
-                </p>
-                
-                
+                <div class="d-md-flex flex-md-column-reverse">
+                    <embed src="img/svg/rechazada.svg" type="" class="img-rechazado mx-auto d-block mt-8 order-1 order-md-2">
+                    <p class="text-center mt-3 mt-md-0 order-2 order-md-">
+                        La solicitud ha sido rechazada <br class="d-md-none d-block"> 
+                        por el momento.
+                    </p>
+                </div>
             </div>
             
         </div>

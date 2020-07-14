@@ -16,35 +16,67 @@
     
     
     <main>
-        <form action=""  id="form-aceptada">
-            <div class="d-md-flex">
-                <div class="col-md-7" id="inicio-content" style="overflow-y: auto;height: 130vw;">
-                    <div class="border-bottom col-md-9 mx-auto">
-                        <a href="">
-                            <i class="fas fa-arrow-left"></i>
-                        </a>
-                        <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-md-none d-block">
-                    </div>
-
-                    <div class="text-center content-title">
-                        <img src="img/svg/error.svg" alt="" class="iconos-status mx-auto d-block mb-3">
-                        <h5>
-                            IMEI rechazado
-                        </h5>
-                    </div>
-                    <div class="border-bottom col-10 mx-auto" style="margin: 5vh 0;"></div>
-                    <div class="text-center">
-                        <h5 class="text-danger">Samsung Galaxy A20</h5>
-                        <h5>IMEI 032984759023847</h5>
-                        <h5>es incorrecto o inválido.</h5>
-                    </div>
-                    <img src="img/svg/bar-code.svg" alt="" class="bar-code mx-auto d-block">
+        
+        <div class="d-md-flex">
+            <div class="col-md-5 lateral-bar px-0 d-md-block d-none" id="inicio-form">
+                <div class="border-bottom col-md-9 mx-auto d-md-none d-block">
+                    <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-block">
                 </div>
-                <div class="d-flex justify-content-center position-absolute" style="left: 0;right: 0;bottom: 5vh;">
-                    <a href="imei-equipo.html" class="btn btn-danger btn-rounded col-10 py-3 d-block mx-auto"  type="button" >Volver a cargar IMEI</a>
+               
+                    <h5 class="inicio-text-1 text-md-center">
+                        ¿Ya has elegido <br class="d-md-none">
+                        tu <br class="d-md-block d-none"> próximo <br class="d-md-none">
+                        smartphone?
+                    </h5>
+                    <h5 class="text-danger inicio-text-2 text-md-center mt-md-3 ">
+                        ¡Te lo <br class="d-md-none">
+                        financiamos!
+                    </h5>
+                    
+
+                    <div>
+                        <img src="img/svg/men-phone.svg" alt="" class="mx-md-auto img-1 d-block">
+                    </div>
+                
+             
+                <div class="d-md-none d-block text-center pt-2">
+                    <button class="btn btn-danger btn-rounded col-8 d-block mx-auto position-absolute botton-btn left-0 right-0" id="btn-comencemos">¡Comencemos!</button>
                 </div>
             </div>
-        </form>
+            <div class="col-md-7 content-aceptada-2" id="inicio-content">
+                <div class="border-bottom col-md-9 mx-auto d-md-none d-block">
+                    <a href="">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-md-none d-block">
+                </div>
+                <div class="border-bottom col-md-9 mx-auto d-none d-md-block">
+                    <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-block">
+                </div>
+
+                <div class="text-center content-title">
+                    <img src="img/svg/error.svg" alt="" class="iconos-status mx-auto d-block mb-3">
+                    <h5>
+                        IMEI rechazado
+                    </h5>
+                </div>
+                <div class="border-bottom col-10 mx-auto d-md-none d-block" style="margin: 5vh 0;"></div>
+                <div class="col-10 mx-auto d-md-block d-none" style="margin: 8vh 0;"></div>
+                <div class="text-center">
+                    <h5 class="text-danger">Samsung Galaxy A20</h5>
+                    <h5>IMEI 032984759023847</h5>
+                    <h5>es incorrecto o inválido.</h5>
+                </div>
+                <img src="img/svg/bar-code.svg" alt="" class="bar-code mx-auto d-block">
+                <div class="d-none justify-content-center position-absolute d-md-flex" style="left: 0;right: 0;bottom: 5vh;">
+                    <a href="imei-equipo.html" class="btn btn-danger btn-rounded col-6 d-block mx-auto"  type="button" >Volver a cargar IMEI</a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center position-absolute d-md-none" style="left: 0;right: 0;bottom: 5vh;">
+                <a href="imei-equipo.html" class="btn btn-danger btn-rounded col-10 py-3 d-block mx-auto"  type="button" >Volver a cargar IMEI</a>
+            </div>
+        </div>
+        
     </main>
   
     <!-- SCRIPTS -->

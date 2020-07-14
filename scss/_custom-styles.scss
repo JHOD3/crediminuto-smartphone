@@ -173,14 +173,24 @@ h3 {
 h6 {
     font-size: 1.3888888888888888vw;
 }
+h5 {
+    font-size: 2.2569444444444446vw;
+}
 .font-weight-300{
     font-weight: 300;
 }
+.left-content{
+    overflow-y: scroll;
+    height: 100vh;
+}
 .logo {
-    width: 15.4vw;
-    height: 2.7vw;
-    margin-bottom: 1.6vw;
-    margin-top: 2.9vw;
+    width: 16.145833333333332vw;
+    height: 3.8949652777777777vw;
+    margin-bottom: 1.4756944444444444vw;
+    margin-top: 2.951388888888889vw;
+}
+.content-title {
+    margin-top: 2.6041666666666665vw;
 }
 .nav-link {
     display: block;
@@ -383,8 +393,14 @@ h6 {
     margin-top: -0.5208333333333334vw;
     z-index: -1;
 }
+.svg-errors{
+    width: 13px
+}
 .img-btn-store{
     width: 11.284722222222221vw;
+}
+.label-text-center input {
+    text-indent: 0px !important;
 }
 .step-crediminuto a h6{
     opacity: 0.5;
@@ -401,7 +417,7 @@ h6 {
     margin-top: 1.9965277777777777vw;
 }
 .credimunuto-label label.active {
-    transform: translateY(-14px) scale(0.8) translateX(20px);
+    transform: translateY(-6px) scale(0.8) translateX(20px);
 }
 .credimunuto-label label {
     transform: translateY(12px) translateX(20px);
@@ -534,7 +550,7 @@ li.my-1 {
     color: #666;
 }
 .iconos-status{
-    width: 110px;
+    width: 7.204861111111111vw;
 }
 .caritas{
     width: 34px;
@@ -611,14 +627,23 @@ li.my-1 {
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     background: #D8143B;
 }
-.lateral-bar {
-    box-shadow: -1px 0px 26px 0px #00000024;
+input:disabled{
+    border-bottom: 1px solid transparent  !important;
+}
+.img-1 {
+    width: 10.9375vw;
+    margin-top: 5.729166666666667vw;
+}
+.select-wrapper span.caret {
+    position: absolute;
+    top: 0.8rem;
+    right: 30px;
+    font-size: 0.63rem;
+    color: #c22645;
+}
+.content-aceptada{
+    overflow-y: auto;
     height: 100vh;
-    background-image: url(../img/svg/background-lateral-bar-1.svg);
-    background-position-y: 24rem;
-    background-repeat: no-repeat;
-    background-position: center 57vh;
-    padding-top: 6.9vw;
 }
 @media (min-width: 768px){
     .modal-backdrop {
@@ -653,7 +678,41 @@ li.my-1 {
 .toolbar .toolbar-bottom {
     display: none !important;
 }
+
+.img-rechazado {
+    width: 9.809027777777779vw;
+}
+.bar-code {
+    width: 26.041666666666668vw;
+}
+.content-upload-file {
+    margin: 3vw auto;
+}
+.icono-upload-file {
+    width: 4vw;
+    height: 3vw;
+}
+.img-mueble {
+    width: 30vw;
+}
 @media (max-width: 768px){
+    .img-mueble {
+        width: 80vw;
+    }
+    .content-aceptada{
+        overflow-y: auto;
+        height: 122vw;
+    }
+    .content-aceptada-2 {
+        overflow-y: auto;
+        height: 80vh;
+    }
+    .btn{
+        font-size: $btn-font-size-basic_movil;
+    }
+    .svg-errors{
+        width: 14px
+    }
     .font30-px {
         font-size: 8.604167vw;
     }
@@ -787,6 +846,12 @@ li.my-1 {
         margin-top: 9.118541033434651vw;
         margin-bottom: 9.118541033434651vw;
         padding-top: 5.319148936170213vw;
+        label {
+            &.active {
+                transform: translateY(-14px);
+                font-size: 2.5835866261398177vw !important;
+            }
+        }
     }
     .credimunuto-label label {
         transform: translateY(6.966184vw) translateX(20px);
@@ -918,6 +983,16 @@ li.my-1 {
         font-size: 0.63rem;
         color: #c22645;
     }
+    .select-wrapper {
+        position: relative;
+        padding-top: 2.2vw !important;
+        input {
+            &.select-dropdown {
+                font-size: 4.25531914893617vw; 
+            }
+        }
+    }
+    
     .fa-arrow-left{
         position: absolute;
         font-size: 6vw;
