@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Select 2 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/select2-bootstrap.css">
     <!-- Crediminutos -->
     <link rel="stylesheet" href="css/crediminutos.css">
 </head>
@@ -62,14 +65,25 @@
                         </p>
                     </div>
 
-                    <select class="mdb-select md-form col-md-7 mx-auto mt-5" name="actividad_economicas" id="bancos">
+                    <!-- <select class="mdb-select md-form col-md-7 mx-auto mt-5" name="actividad_economicas" id="bancos">
                         <option value="" disabled selected>Selecciona un modelo</option>
                         <option value="1">modelo 1</option>
                         <option value="2">modelo 2</option>
                         <option value="3">modelo 3</option>
                         <option value="4">modelo 4</option>
                         <option value="5">modelo 5</option>
-                    </select>
+                    </select> -->
+                   <!-- Small input -->
+                   <div class="input-group col-md-8 mx-auto mb-2 mt-5 d-flex mb-5">
+                        <div class="input-group-prepend col-md-1 col-2 px-0">
+                            <div class="input-group-text border-right-0 ml-auto p-3" style="background: none;">
+                                <i class="fas fa-mobile-alt home-responsive"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-11 col-10 px-0">
+                            <input type="text" name="localizacion" id="localizacion"  class="form-control form-control-lg py-0 border-left-0 js-example-basic-multiple" id="inlineFormInputGroupUsername2" placeholder="Comodoro Rivadavia 177">
+                        </div>
+                    </div>
                     <!-- Medium input text -->
                     <div class="md-form col-md-7 px-md-0 mx-auto px-md-3 credimunuto-label mt-5">
                         <input type="text" id="monto" name="monto" class="form-control input-text-indent text-indent is-valid" autocomplete="off" minlength="5" value="12345678900">
@@ -98,9 +112,43 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- jquery validator -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" ></script>
-    
+    <!-- jquery validator -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" ></script>
+    <!-- Select 2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/js/select2.full.min.js"></script>
+    <!-- Libreria español -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/i18n/es.js"></script>  
     <!-- Validation -->
     <script src="js/crediminuto-validaciones.js"></script>
+    <script>
+
+        $('.js-example-basic-multiple').select2({
+            width: 'resolve',
+            maximumSelectionLength:1,
+            dropdownAutoWidth: true,
+            allowClear: false,
+            multiple: true,
+            maximumSelectionSize: 1,
+            minimumInputLength:3,
+            placeholder: "Galaxy Xcover Pro",
+            data: [
+                { id: 1, text: "Galaxy Xcover Pro", title:'Galaxy Xcover Pro'},
+                { id: 2, text: "Galaxy Xcover 3", title:'Galaxy Xcover 3'},
+                { id: 3, text: "Galaxy Xcover 4", title:'Galaxy Xcover 4'},
+            ] ,  
+            templateResult: formatOption,
+            
+        }).on('select2:open',function(){
+    
+            $('.select2-dropdown--below').parent('span').addClass('desplegable');
+        });
+        function formatOption (option) {
+            var $option = $(
+            '<div class="d-flex align-items-start border-bottom pb-3"> <i class="fas fa-mobile-alt icono-brujular"></i> <div class="ml-3"><p class="mb-0 font17-px"> ' + option.text + '</p><small>' + option.title + '</small></div></div>'
+            );
+            return $option;
+        };
+    </script>
     
 </body>
 </html>

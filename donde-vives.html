@@ -101,10 +101,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" ></script>
     <!-- Select 2 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/js/select2.full.min.js"></script>
-        <!-- Libreria español -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/i18n/es.js"></script>  
+    <!-- Libreria español -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/i18n/es.js"></script>  
     <!-- Validation -->
     <script src="js/crediminuto-validaciones.js"></script>
+    <script>
+
+        $('.js-example-basic-multiple').select2({
+            width: 'resolve',
+            maximumSelectionLength:1,
+            dropdownAutoWidth: true,
+            allowClear: false,
+            multiple: true,
+            maximumSelectionSize: 1,
+            minimumInputLength:3,
+            placeholder: "Comodoro Rivadavia 177",
+            data: [
+                { id: 1, text: "Comodoro Rivadavia 177", title:'Boulogne, Buenos Aires, Argentina'},
+                { id: 2, text: "Comodoro Rivadavia 177", title:'Boulogne, Buenos Aires, Argentina'},
+                { id: 3, text: "Comodoro Rivadavia 177", title:'Boulogne, Buenos Aires, Argentina'},
+            ] ,  
+            templateResult: formatOption,
+            
+        }).on('select2:open',function(){
     
+            $('.select2-dropdown--below').parent('span').addClass('desplegable');
+        });
+
+        function formatOption (option) {
+            var $option = $(
+            '<div class="d-flex align-items-start border-bottom pb-3"> <embed src="img/svg/brujula.svg" class="icono-brujular"> <div class="ml-3"><p class="mb-0 font17-px"> ' + option.text + '</p><small>' + option.title + '</small></div></div>'
+            );
+            return $option;
+        };
+    </script>
 </body>
 </html>
