@@ -20689,6 +20689,10 @@ input:disabled {
   left: 55.077295vw !important;
 }
 
+.desplegable-2 {
+  left: 57.077295vw !important;
+}
+
 .label-data-birth {
   transform: translateY(-14px) scale(0.8) translateX(20px) !important;
   font-size: 1rem !important;
@@ -20979,6 +20983,12 @@ input:disabled {
   }
 
   .desplegable {
+    top: 81.4009661836vw !important;
+    left: 12.077294686vw !important;
+    width: 77.2946859903vw !important;
+  }
+
+  .desplegable-2 {
     top: 81.4009661836vw !important;
     left: 12.077294686vw !important;
     width: 77.2946859903vw !important;
