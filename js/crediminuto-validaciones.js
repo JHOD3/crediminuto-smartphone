@@ -233,7 +233,33 @@ $(document).ready(function(){
         
         // $.fn.select2.defaults.set('language', 'es');
     
-        
+        $('.js-example-basic-multiple').select2({
+            width: 'resolve',
+            maximumSelectionLength:1,
+            dropdownAutoWidth: true,
+            allowClear: false,
+            multiple: true,
+            maximumSelectionSize: 1,
+            minimumInputLength:3,
+            placeholder: "Comodoro Rivadavia 177",
+            data: [
+                { id: 1, text: "Comodoro Rivadavia 177", title:'Boulogne, Buenos Aires, Argentina'},
+                { id: 2, text: "Comodoro Rivadavia 177", title:'Boulogne, Buenos Aires, Argentina'},
+                { id: 3, text: "Comodoro Rivadavia 177", title:'Boulogne, Buenos Aires, Argentina'},
+            ] ,  
+            templateResult: formatOption,
+            
+        }).on('select2:open',function(){
+    
+            $('.select2-dropdown--below').parent('span').addClass('desplegable');
+        });
+
+        function formatOption (option) {
+            var $option = $(
+            '<div class="d-flex align-items-start border-bottom pb-3"> <embed src="img/svg/brujula.svg" class="icono-brujular"> <div class="ml-3"><p class="mb-0 font17-px"> ' + option.text + '</p><small>' + option.title + '</small></div></div>'
+            );
+            return $option;
+        };
         function format (option) {
             if (!state.id) return state.text; 
              return "<i class='fa fa-check'></i>" + state.text;

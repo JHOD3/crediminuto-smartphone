@@ -46,7 +46,7 @@
                     <button class="btn btn-danger btn-rounded col-8 d-block mx-auto position-absolute botton-btn left-0 right-0" id="btn-comencemos">¡Comencemos!</button>
                 </div>
             </div>
-            <div class="col-md-7 content-aceptada-2" id="content-imei-equipo">
+            <div class="col-md-7 content-aceptada-2" id="inicio-content">
                 <div class="border-bottom col-md-9 mx-auto d-md-none d-block">
                     <a href="">
                         <i class="fas fa-arrow-left"></i>
@@ -67,9 +67,6 @@
                     </p>
                 </div>
                 <div class="border-bottom d-md-block d-none col-md-8 mx-auto"></div>
-                <div id="video">
-                    <video class="border border-white rounded col-9 mx-auto mt-3 px-0 d-block" autoplay="" id="webcam" style="padding: 0 0;height: 228px;width: 300px;"></video>
-                </div>
                 <div class="mt-content-upload border-bottom pb-2 col-md-6 mx-md-auto d-md-none d-block">
                     <a href="capturar-imei.html" class="d-flex justify-content-center content-upload-file align-items-center">
                         <img src="img/svg/captura.svg" alt="" class="icono-upload-file">
@@ -84,7 +81,7 @@
                     <input type="text" id="imei" name="imei" class="form-control input-text-indent text-indent is-valid" autocomplete="off" >
                     <label for="imei">Ingresar IMEI manualmente</label>
                 </div>
-                <div class="d-none justify-content-center d-md-flex" style="left: 0;right: 0;">
+                <div class="d-none justify-content-center d-md-flex pt-5">
                     <a href="imei-equipo.html" class="btn btn-danger btn-rounded col-6 mx-auto"  type="button" >Continuar</a>
                 </div>
             </div>
@@ -112,31 +109,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/i18n/es.js"></script>  
     <!-- Validation -->
     <script src="js/crediminuto-validaciones.js"></script>
-    <script>
-        var video = document.querySelector('#webcam');
-
-        function webcam(btn) {
-            if(btn == 'pause') {
-                video.pause();
-                console.log(video);
-                
-
-            } else {
-                video.play();
-            }
-        }
-
-        if (navigator.mediaDevices.getUserMedia) {
-            navigator.mediaDevices.getUserMedia({
-                video:true
-            })
-            .then(function(stream) {
-            video.srcObject = stream;
-            })
-            .catch(function(e) {
-            console.log(e);
-            });
-        }
-    </script>
+    
 </body>
 </html>

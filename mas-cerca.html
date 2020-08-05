@@ -76,7 +76,7 @@
                         <label for="monto">Ingresa el monto del equipo</label>
                     </div>
                    
-                    <div class="d-md-flex position-absolute d-none" style="left: 0;right: 0;bottom: 5vh;">
+                    <div class="d-md-flex d-none pt-5">
                         <a href="equipo-pago.html" class="btn btn-danger btn-rounded col-6 mx-auto"  type="button" >Continuar</a>
                     </div>
                 </div>
@@ -98,11 +98,9 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- jquery validator -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" ></script>
-    <script>
-        $(document).ready(function(){
-            $('.mdb-select').materialSelect();
-        });
-    </script>
+    
+    <!-- Validation -->
+    <script src="js/crediminuto-validaciones.js"></script>
     
 </body>
 </html>
