@@ -14181,7 +14181,7 @@ button.md-toast-close-button {
   background: linear-gradient(135deg, #ababab 0%, #fff 100%);
 }
 .white-skin .primary-color, .white-skin ul.stepper li.active a .circle, ul.stepper li.active a .white-skin .circle, .white-skin ul.stepper li.completed a .circle, ul.stepper li.completed a .white-skin .circle {
-  background-color: #4285f4 !important;
+  background-color: #c22645 !important;
 }
 .white-skin .navbar {
   color: #424242;
@@ -14191,7 +14191,7 @@ button.md-toast-close-button {
   color: #000;
 }
 .white-skin .navbar .navbar-nav .nav-item .dropdown-menu a:hover, .white-skin .navbar .navbar-nav .nav-item .dropdown-menu a:focus, .white-skin .navbar .navbar-nav .nav-item .dropdown-menu a:active {
-  background-color: #2a75f3;
+  background-color: #ad223d;
 }
 .white-skin .navbar .navbar-nav .nav-item a {
   color: #424242;
@@ -14222,7 +14222,7 @@ button.md-toast-close-button {
   background-color: transparent !important;
 }
 .white-skin .side-nav .sn-avatar-wrapper img {
-  border: 3px solid #0d5bdd;
+  border: 3px solid #82192e;
 }
 .white-skin .side-nav .social {
   border-bottom: 1px solid rgba(153, 153, 153, 0.3);
@@ -14235,7 +14235,7 @@ button.md-toast-close-button {
 .white-skin .side-nav .social a:hover .fas,
 .white-skin .side-nav .social a:hover .fab,
 .white-skin .side-nav .social a:hover .far {
-  color: #4285f4 !important;
+  color: #c22645 !important;
   transition: all 0.3s linear;
 }
 .white-skin .side-nav .search-form .md-form input {
@@ -14256,7 +14256,7 @@ button.md-toast-close-button {
   transition: all 0.3s linear;
 }
 .white-skin .side-nav .collapsible li .collapsible-header.active {
-  color: #4285f4;
+  color: #c22645;
   background-color: transparent;
 }
 .white-skin .side-nav .collapsible li .collapsible-header:hover {
@@ -14266,7 +14266,7 @@ button.md-toast-close-button {
   color: #424242;
 }
 .white-skin .side-nav .collapsible li .collapsible-body a:hover, .white-skin .side-nav .collapsible li .collapsible-body a.active, .white-skin .side-nav .collapsible li .collapsible-body a:active {
-  color: #4285f4;
+  color: #c22645;
 }
 .white-skin .side-nav .collapsible li .collapsible-body a .fas,
 .white-skin .side-nav .collapsible li .collapsible-body a .fab,
@@ -14278,7 +14278,7 @@ button.md-toast-close-button {
   transition: all 0.3s linear;
 }
 .white-skin .side-nav .collapsible li a:not(.collapsible-header):hover, .white-skin .side-nav .collapsible li a:not(.collapsible-header).active, .white-skin .side-nav .collapsible li a:not(.collapsible-header):active {
-  color: #4285f4 !important;
+  color: #c22645 !important;
 }
 .white-skin .side-nav .sidenav-bg:after, .white-skin .side-nav .sidenav-bg.mask-strong:after {
   background: rgba(255, 255, 255, 0.8);
@@ -14291,36 +14291,36 @@ button.md-toast-close-button {
 }
 .white-skin .btn-primary {
   color: #fff;
-  background-color: #4285f4 !important;
+  background-color: #c22645 !important;
 }
 .white-skin .btn-primary:hover {
   color: #fff;
-  background-color: #2a75f3 !important;
+  background-color: #ad223d !important;
 }
 .white-skin .btn-primary:focus, .white-skin .btn-primary.focus {
   box-shadow: none;
 }
 .white-skin .btn-primary:focus, .white-skin .btn-primary:active, .white-skin .btn-primary.active {
-  background-color: #0b51c5;
+  background-color: #6d1527;
 }
 .white-skin .btn-primary.dropdown-toggle {
-  background-color: #4285f4 !important;
+  background-color: #c22645 !important;
 }
 .white-skin .btn-primary.dropdown-toggle:hover, .white-skin .btn-primary.dropdown-toggle:focus {
-  background-color: #1266f1 !important;
+  background-color: #971e36 !important;
 }
 .white-skin .btn-primary:not([disabled]):not(.disabled):active, .white-skin .btn-primary:not([disabled]):not(.disabled).active, .show > .white-skin .btn-primary.dropdown-toggle {
-  background-color: #1266f1 !important;
+  background-color: #971e36 !important;
   box-shadow: none;
 }
 .white-skin .btn-primary:not([disabled]):not(.disabled):active:focus, .white-skin .btn-primary:not([disabled]):not(.disabled).active:focus, .show > .white-skin .btn-primary.dropdown-toggle:focus {
   box-shadow: none;
 }
 .white-skin .primary-ic {
-  color: #4285f4 !important;
+  color: #c22645 !important;
 }
 .white-skin .primary-ic:hover, .white-skin .primary-ic:focus {
-  color: #4285f4;
+  color: #c22645;
 }
 .white-skin a.btn:not([href]):not([tabindex]),
 .white-skin a.btn:not([href]):not([tabindex]):focus,
@@ -14413,18 +14413,18 @@ button.md-toast-close-button {
   color: #fff;
 }
 .white-skin .btn-outline-primary {
-  color: #4285f4 !important;
+  color: #c22645 !important;
   background-color: transparent !important;
-  border: 2px solid #4285f4 !important;
+  border: 2px solid #c22645 !important;
 }
 .white-skin .btn-outline-primary:hover, .white-skin .btn-outline-primary:focus, .white-skin .btn-outline-primary:active, .white-skin .btn-outline-primary:active:focus, .white-skin .btn-outline-primary.active {
-  color: #4285f4 !important;
+  color: #c22645 !important;
   background-color: transparent !important;
-  border-color: #4285f4 !important;
+  border-color: #c22645 !important;
 }
 .white-skin .btn-outline-primary:not([disabled]):not(.disabled):active, .white-skin .btn-outline-primary:not([disabled]):not(.disabled).active, .show > .white-skin .btn-outline-primary.dropdown-toggle {
   background-color: transparent !important;
-  border-color: #4285f4 !important;
+  border-color: #c22645 !important;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 .white-skin .btn-outline-primary:not([disabled]):not(.disabled):active:focus, .white-skin .btn-outline-primary:not([disabled]):not(.disabled).active:focus, .show > .white-skin .btn-outline-primary.dropdown-toggle:focus {
@@ -14487,8 +14487,8 @@ button.md-toast-close-button {
 .white-skin .md-outline input[type=search-md]:focus:not([readonly]),
 .white-skin .md-outline input[type=search]:focus:not([readonly]),
 .white-skin .md-outline textarea:focus:not([readonly]) {
-  border-color: #4285f4;
-  box-shadow: inset 0 0 0 1px #4285f4;
+  border-color: #c22645;
+  box-shadow: inset 0 0 0 1px #c22645;
 }
 .white-skin .md-outline input[type=text]:focus:not([readonly]) + label,
 .white-skin .md-outline input[type=password]:focus:not([readonly]) + label,
@@ -14502,7 +14502,7 @@ button.md-toast-close-button {
 .white-skin .md-outline input[type=search-md]:focus:not([readonly]) + label,
 .white-skin .md-outline input[type=search]:focus:not([readonly]) + label,
 .white-skin .md-outline textarea:focus:not([readonly]) + label {
-  color: #4285f4;
+  color: #c22645;
 }
 .white-skin .md-bg input[type=text],
 .white-skin .md-bg input[type=password],
@@ -14516,52 +14516,52 @@ button.md-toast-close-button {
 .white-skin .md-bg input[type=search-md],
 .white-skin .md-bg input[type=search],
 .white-skin .md-bg textarea.md-textarea {
-  background-image: linear-gradient(to bottom, #4285f4, #4285f4), linear-gradient(to bottom, #ced4da, #ced4da);
+  background-image: linear-gradient(to bottom, #c22645, #c22645), linear-gradient(to bottom, #ced4da, #ced4da);
 }
 .white-skin input[type=email]:focus:not([readonly]),
 .white-skin input[type=text]:focus:not([readonly]),
 .white-skin input[type=password]:focus:not([readonly]),
 .white-skin input[type=number]:focus:not([readonly]),
 .white-skin textarea.md-textarea:focus:not([readonly]) {
-  border-color: #4285f4;
-  box-shadow: 0 1px 0 0 #4285f4;
+  border-color: #c22645;
+  box-shadow: 0 1px 0 0 #c22645;
 }
 .white-skin input[type=email]:focus:not([readonly]) + label,
 .white-skin input[type=text]:focus:not([readonly]) + label,
 .white-skin input[type=password]:focus:not([readonly]) + label,
 .white-skin input[type=number]:focus:not([readonly]) + label,
 .white-skin textarea.md-textarea:focus:not([readonly]) + label {
-  color: #4285f4;
+  color: #c22645;
 }
 .white-skin input[type=checkbox]:checked + label:before {
-  border-right: 2px solid #4285f4;
-  border-bottom: 2px solid #4285f4;
+  border-right: 2px solid #c22645;
+  border-bottom: 2px solid #c22645;
 }
 .white-skin input[type=checkbox].filled-in:checked + label:before {
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
 }
 .white-skin input[type=checkbox].filled-in:checked + label:after {
-  background-color: #4285f4;
-  border-color: #4285f4;
+  background-color: #c22645;
+  border-color: #c22645;
 }
 .white-skin .md-form .prefix.active {
-  color: #4285f4;
+  color: #c22645;
 }
 .white-skin .select-wrapper.colorful-select.md-form.md-outline span.caret.active {
-  color: #4285f4 !important;
+  color: #c22645 !important;
 }
 .white-skin .select-wrapper.colorful-select.md-form.md-outline input.select-dropdown:focus {
-  border-color: #4285f4;
-  box-shadow: inset 0 0 0 1px #4285f4;
+  border-color: #c22645;
+  box-shadow: inset 0 0 0 1px #c22645;
 }
 .white-skin .select-wrapper.colorful-select.md-form.md-outline + label.active {
-  color: #4285f4;
+  color: #c22645;
 }
 .white-skin .select-wrapper.colorful-select.md-form .dropdown-content li.active,
 .white-skin .select-wrapper.colorful-select.md-form .dropdown-content li a,
 .white-skin .select-wrapper.colorful-select.md-form .dropdown-content li span:hover {
-  background-color: #4285f4 !important;
+  background-color: #c22645 !important;
 }
 .white-skin .select-wrapper.colorful-select.md-form .dropdown-content li.disabled.active {
   background-color: transparent !important;
@@ -14572,24 +14572,24 @@ button.md-toast-close-button {
 .white-skin .carousel-multi-item .controls-top > a,
 .white-skin .carousel-multi-item .carousel-indicators li,
 .white-skin .carousel-multi-item .carousel-indicators li.active {
-  background-color: #4285f4;
+  background-color: #c22645;
 }
 .white-skin .form-header,
 .white-skin .card-header {
-  background-color: #4c8bf5;
+  background-color: #cb2848;
 }
 .white-skin .spinner-primary-color,
 .white-skin .spinner-primary-color-only {
-  border-color: #4285f4;
+  border-color: #c22645;
 }
 .white-skin .pagination-primary-color .page-item.active .page-link,
 .white-skin .pagination-primary-color .page-item.active .page-link:focus,
 .white-skin .pagination-primary-color .page-item.active .page-link:hover {
   color: #fff;
-  background-color: #4285f4;
+  background-color: #c22645;
 }
 .white-skin .pagination-primary-color .page-link {
-  color: #4285f4;
+  color: #c22645;
 }
 .white-skin .pagination-primary-color .page-link:focus {
   box-shadow: none;
