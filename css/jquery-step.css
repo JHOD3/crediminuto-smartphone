@@ -24,6 +24,7 @@ ul[role="menu"] li {
 }
 ul[role="menu"] {
    margin-top: 4rem;
+   margin-bottom: 4rem;
 }
 .done a .number {
     background: #c22645;
