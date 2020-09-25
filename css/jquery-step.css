@@ -1,0 +1,51 @@
+ul[role="tablist"]{
+    display: flex;
+}
+span.number {
+    width: 100px;
+    position: absolute;
+    height: 6px;
+    background: #b3b3b3;
+    border-radius: 10px;
+}
+.current span.number {
+    width: 100px;
+    position: absolute;
+    height: 6px;
+    background: #c22645;
+    border-radius: 10px;
+}
+ul[role="tablist"] li {
+    margin-left: 117px;
+    list-style: none;
+}
+ul[role="menu"] li {
+   list-style: none;
+}
+ul[role="menu"] {
+   margin-top: 4rem;
+}
+.done a .number {
+    background: #c22645;
+}
+a[href="#previous"] {
+    display: none;
+}
+ul[role="tablist"] .first {
+    margin-left: -107px;
+}
+@media (max-width: 720px) {
+    span.number {
+        width: 60px;
+    } 
+    .current span.number {
+        width: 60px;
+    } 
+    ul[role="tablist"] li {
+        margin-left: 75px;
+        list-style: none;
+    }  
+    ul[role="menu"] {
+        padding: 0;
+    }        
+}
