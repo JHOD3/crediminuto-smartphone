@@ -23,8 +23,9 @@ ul[role="menu"] li {
    list-style: none;
 }
 ul[role="menu"] {
-   margin-top: 4rem;
+   margin-top: 2rem;
    margin-bottom: 4rem;
+   padding: 0;
 }
 .done a .number {
     background: #c22645;
@@ -49,7 +50,4 @@ ul[role="tablist"] .first {
         margin-left: 75px;
         list-style: none;
     }  
-    ul[role="menu"] {
-        padding: 0;
-    }        
 }
