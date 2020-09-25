@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crediminuto</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Crediminutos -->
+    <link rel="stylesheet" href="css/crediminutos.css">
+</head>
+
+<body>
+    <main>
+        <div class="d-md-flex">
+            <div class="col-md-5 lateral-bar px-0 d-md-block d-none" id="inicio-form">
+                <div class="border-bottom col-md-9 mx-auto d-md-none d-block">
+                    <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-block">
+                </div>
+                
+                    <h5 class="inicio-text-1 text-md-center">
+                        ¿Ya has elegido <br class="d-md-none">
+                        tu <br class="d-md-block d-none"> próximo <br class="d-md-none">
+                        smartphone?
+                    </h5>
+                    <h5 class="text-danger inicio-text-2 text-md-center mt-md-3 ">
+                        ¡Te lo <br class="d-md-none">
+                        financiamos!
+                    </h5>
+                    
+
+                    <div>
+                        <img src="img/svg/men-phone.svg" alt="" class="mx-md-auto img-1 d-block">
+                    </div>
+                
+                
+                <div class="d-md-none d-block text-center pt-2">
+                    <button class="btn btn-danger btn-rounded col-8 d-block mx-auto position-absolute botton-btn left-0 right-0" id="btn-comencemos">¡Comencemos!</button>
+                </div>
+            </div>
+            <style>
+                ul[role="tablist"]{
+                    display: flex;
+                }
+                span.number {
+                    width: 100px;
+                    position: absolute;
+                    height: 6px;
+                    background: #b3b3b3;
+                    border-radius: 10px;
+                }
+                .current span.number {
+                    width: 100px;
+                    position: absolute;
+                    height: 6px;
+                    background: #c22645;
+                    border-radius: 10px;
+                }
+                ul[role="tablist"] li {
+                    margin-left: 117px;
+                    list-style: none;
+                }
+                ul[role="menu"] li {
+                   list-style: none;
+                }
+                ul[role="menu"] {
+                   margin-top: 4rem;
+                }
+                .done a .number {
+                    background: #c22645;
+                }
+                a[href="#previous"] {
+                    display: none;
+                }
+                ul[role="tablist"] .first {
+                    margin-left: -107px;
+                }
+                @media (max-width: 720px) {
+                    span.number {
+                        width: 60px;
+                    } 
+                    .current span.number {
+                        width: 60px;
+                    } 
+                    ul[role="tablist"] li {
+                        margin-left: 75px;
+                        list-style: none;
+                    }          
+                }
+            </style>
+            <div class="col-md-7 content-aceptada" id="inicio-content">
+                <div class="border-bottom col-md-9 mx-auto d-md-none d-block">
+                    <a href="">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-md-none d-block">
+                </div>
+                <div class="border-bottom col-md-9 mx-auto d-none d-md-block">
+                    <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-block">
+                </div>
+                <form action="" class="pt-5">
+                    <div class="justify-content-center mb-3">
+                        <small class="text-center d-block">VEFIFICACIÓN DE IDENTIDAD</small>
+                    </div>
+                    <div id="jquery-step">
+                        <h3></h3>
+                        <section>
+                            <h4 class="text-center mt-5">Su edad, ¿en cual de los <br> siguientes rangos se encuentra?</h4>
+                            <div class="justify-content-center mt-5" style="display: grid;">
+                                <div class="form-check mb-3">
+                                    <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                                    <label class="form-check-label" for="materialUnchecked">  00 - 30 </label>
+                                </div>
+    
+                                <div class="form-check mb-3">
+                                    <input type="radio" class="form-check-input" id="materialUnchecked2" name="materialExampleRadios">
+                                    <label class="form-check-label" for="materialUnchecked2"> 31 - 39</label>
+                                </div>
+    
+                                <div class="form-check mb-3">
+                                    <input type="radio" class="form-check-input" id="materialUnchecked3" name="materialExampleRadios">
+                                    <label class="form-check-label" for="materialUnchecked3">40 - 48</label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input type="radio" class="form-check-input" id="materialUnchecked4" name="materialExampleRadios">
+                                    <label class="form-check-label" for="materialUnchecked4">49 - 57</label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input type="radio" class="form-check-input" id="materialUnchecked5" name="materialExampleRadios">
+                                    <label class="form-check-label" for="materialUnchecked5">58 - 99</label>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <h3></h3>
+                        <section>
+                            <h4 class="text-center mt-5">De los siguientes teléfonos <br class="d-none d-md-block"> indique con cual usted ha tenido <br class="d-none d-md-block"> o tiene algún vinculo</h4>
+                            <div class="justify-content-center mt-5" style="display: grid;">
+                                <div class="form-check mb-3">
+                                    <input type="radio" class="form-check-input" id="materialUnchecked6" name="materialExampleRadios2">
+                                    <label class="form-check-label" for="materialUnchecked6">4618015</label>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input type="radio" class="form-check-input" id="materialUnchecked7" name="materialExampleRadios2">
+                                    <label class="form-check-label" for="materialUnchecked7">4618025</label>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input type="radio" class="form-check-input" id="materialUnchecked8" name="materialExampleRadios2">
+                                    <label class="form-check-label" for="materialUnchecked8">4618025</label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input type="radio" class="form-check-input" id="materialUnchecked9" name="materialExampleRadios2">
+                                    <label class="form-check-label" for="materialUnchecked9">4618023</label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input type="radio" class="form-check-input" id="materialUnchecked10" name="materialExampleRadios2">
+                                    <label class="form-check-label" for="materialUnchecked10">4618056</label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input type="radio" class="form-check-input" id="materialUnchecked11" name="materialExampleRadios2">
+                                    <label class="form-check-label" for="materialUnchecked11">Ninguna de las anteriores</label>
+                                </div>
+                            </div>
+                        </section>
+                        <h3></h3>
+                        <section>
+                            <h4 class="text-center mt-5">De qué tipo es su tarjeta de <br> crédito de Bancolombia</h4>
+                            <div class="justify-content-center mt-5" style="display: grid;">
+                                <div class="form-check mb-3">
+                                    <input type="radio" class="form-check-input" id="materialUnchecked12" name="materialExampleRadio3">
+                                    <label class="form-check-label" for="materialUnchecked12">Clásica / Esándar</label>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input type="radio" class="form-check-input" id="materialUnchecked13" name="materialExampleRadio3">
+                                    <label class="form-check-label" for="materialUnchecked13">Oro / Gold</label>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input type="radio" class="form-check-input" id="materialUnchecked14" name="materialExampleRadio3">
+                                    <label class="form-check-label" for="materialUnchecked14">Platino / Platinum</label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input type="radio" class="form-check-input" id="materialUnchecked15" name="materialExampleRadio3">
+                                    <label class="form-check-label" for="materialUnchecked15">Empresarial / Bussines</label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input type="radio" class="form-check-input" id="materialUnchecked16" name="materialExampleRadio3">
+                                    <label class="form-check-label" for="materialUnchecked16">No tengo tarjeta de crédito <br> con la entidad</label>
+                                </div>
+                            </div>
+                        </section>
+                        <h3></h3>
+                        <section>
+                            <h4 class="text-center mt-5">En agosto de 2018 su cuenta <br> corriente con Divivienda</h4>
+                            <div class="justify-content-center mt-5" style="display: grid;">
+                                <div class="form-check mb-3">
+                                    <input type="radio" class="form-check-input" id="materialUnchecked17" name="materialExampleRadios4">
+                                    <label class="form-check-label" for="materialUnchecked17">Estaba abierta / vigente</label>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input type="radio" class="form-check-input" id="materialUnchecked18" name="materialExampleRadios4">
+                                    <label class="form-check-label" for="materialUnchecked18">Estaba cancelada / saldada / cerrada</label>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input type="radio" class="form-check-input" id="materialUnchecked19" name="materialExampleRadios4">
+                                    <label class="form-check-label" for="materialUnchecked19">Nunca he tenido cuenta corriente <br> con la entidad</label>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- jquery validator -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" ></script>
+    <!-- Jquery Step -->
+    <script src="js/jquery.steps.js"></script>
+    <!-- Validation -->
+    <script src="js/crediminuto-validaciones.js"></script>
+    <script>
+
+    $("#jquery-step").steps({
+        headerTag: "div>h3",
+        bodyTag: "section",
+        transitionEffect: "slideLeft",
+        autoFocus: true,
+        labels: {
+            finish: 'Continuar',
+            next: 'Continuar',
+            previous: 'Anterior'
+        },
+        onFinishing: function (event, currentIndex)
+        {   
+            $(location).attr('href','mas-cerca.html');
+        }
+    });
+    </script>
+</body>
+</html>
