@@ -45,6 +45,8 @@ ul[role="tablist"] .first {
 .content.clearfix {
     padding-top: 15px;
 }
+
+
 @media (max-width: 720px) {
     span.number {
         width: 60px;
