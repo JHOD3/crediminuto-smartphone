@@ -91,7 +91,7 @@
                     </div>
                    
                     <div class="d-md-flex d-none pt-5">
-                        <a href="equipo-pago.html" class="btn btn-danger btn-rounded col-6 mx-auto"  type="button" >Continuar</a>
+                        <a href="equipo-pago.html" class="btn btn-danger btn-rounded col-6 mx-auto btn-progres"  type="button" >Continuar</a>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center position-absolute d-md-none" style="left: 0;right: 0;bottom: 5vh;">
@@ -140,6 +140,14 @@
             
         }).on('select2:open',function(){
             $('.select2-dropdown--below').parent('span').addClass('desplegable-2');
+            $('.select2-selection__choice__remove').click();
+        }).on("select2:select", function (evt) {
+            var element = evt.params.data.element;
+            var $element = $(element);
+            $element.clear();
+            $(this).append($element);
+            $(this).trigger("change");
+            
         });
         function formatOption (option) {
             var $option = $(

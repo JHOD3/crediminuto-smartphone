@@ -997,7 +997,7 @@ function render(wizard, options, state)
         orientation = getValidEnumValue(stepsOrientation, options.stepsOrientation),
         verticalCssClass = (orientation === stepsOrientation.vertical) ? " vertical" : "",
         contentWrapper = $(wrapperTemplate.format(options.contentContainerTag, "content " + options.clearFixCssClass, wizard.html())),
-        stepsWrapper = $(wrapperTemplate.format(options.stepsContainerTag, "steps " + options.clearFixCssClass, "<ul role=\"tablist\"></ul>")),
+        stepsWrapper = $(wrapperTemplate.format(options.stepsContainerTag, "steps " + options.clearFixCssClass, "<ul role=\"tablist\" class='justify-content-center'></ul>")),
         stepTitles = contentWrapper.children(options.headerTag),
         stepContents = contentWrapper.children(options.bodyTag);
 
@@ -1053,9 +1053,11 @@ function renderBody(wizard, state, body, index)
 function renderPagination(wizard, options, state)
 {
     if (options.enablePagination)
-    {
+    {   
+        console.log(options.enablePagination);
         var pagination = "<{0} class=\"actions {1}\"><ul role=\"menu\" aria-label=\"{2}\">{3}</ul></{0}>",
-            buttonTemplate = "<li><a href=\"#{0}\" role=\"menuitem\">{1}</a></li>",
+            buttonTemplate = "<li class='justify-content-center col-md-3 mx-auto' ><a href=\"#{0}\" class='btn btn-danger btn-rounded' role=\"menuitem\">{1}</a></li>",
+            buttonTemplate2 = "<li class='justify-content-center col-md-3 col-12 mx-auto' ><a href=\"#{0}\" class='btn btn-danger btn-rounded mx-auto d-block' role=\"menuitem\">{1}</a></li>",
             buttons = "";
 
         if (!options.forceMoveForward)
@@ -1063,11 +1065,11 @@ function renderPagination(wizard, options, state)
             buttons += buttonTemplate.format("previous", options.labels.previous);
         }
 
-        buttons += buttonTemplate.format("next", options.labels.next);
+        buttons += buttonTemplate2.format("next", options.labels.next);
 
         if (options.enableFinishButton)
         {
-            buttons += buttonTemplate.format("finish", options.labels.finish);
+            buttons += buttonTemplate2.format("finish", options.labels.finish);
         }
 
         if (options.enableCancelButton)
@@ -1709,7 +1711,7 @@ var defaults = $.fn.steps.defaults = {
      * @default "<span class=\"number\">#index#.</span> #title#"
      * @for defaults
      **/
-    titleTemplate: "<span class=\"number\">#index#.</span> #title#",
+    titleTemplate: "<span class=\"number\"></span> #title#",
 
     /**
      * The loading template which will be used to create the loading animation.
@@ -1985,7 +1987,7 @@ var defaults = $.fn.steps.defaults = {
          * @default "current step:"
          * @for defaults
          **/
-        current: "current step:",
+        current: "",
 
         /**
          * This label is important for accessability reasons and describes the kind of navigation.
@@ -2006,7 +2008,7 @@ var defaults = $.fn.steps.defaults = {
          * @default "Finish"
          * @for defaults
          **/
-        finish: "Finish",
+        finish: "Finalizar",
 
         /**
          * Label for the next button.
@@ -2016,7 +2018,7 @@ var defaults = $.fn.steps.defaults = {
          * @default "Next"
          * @for defaults
          **/
-        next: "Next",
+        next: "Continuar",
 
         /**
          * Label for the previous button.
@@ -2026,7 +2028,7 @@ var defaults = $.fn.steps.defaults = {
          * @default "Previous"
          * @for defaults
          **/
-        previous: "Previous",
+        previous: "Anterior",
 
         /**
          * Label for the loading animation.
@@ -2036,7 +2038,7 @@ var defaults = $.fn.steps.defaults = {
          * @default "Loading ..."
          * @for defaults
          **/
-        loading: "Loading ..."
+        loading: "Cargando ..."
     }
 };
 })(jQuery);
