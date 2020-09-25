@@ -42,6 +42,9 @@ ul[role="tablist"] .first {
 .margen-top{
     margin-top: 35px;
 }
+.content.clearfix {
+    margin-top: 40px;
+}
 @media (max-width: 720px) {
     span.number {
         width: 60px;
