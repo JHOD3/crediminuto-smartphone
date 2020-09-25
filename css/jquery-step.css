@@ -43,7 +43,7 @@ ul[role="tablist"] .first {
     margin-top: 35px;
 }
 .content.clearfix {
-    padding-top: 35px;
+    padding-top: 15px;
 }
 @media (max-width: 720px) {
     span.number {
