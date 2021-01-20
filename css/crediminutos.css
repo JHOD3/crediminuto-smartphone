@@ -12792,6 +12792,58 @@ span[data-jarallax-element] {
     transform: translateX(105%);
   }
 }
+
+/** Aqui inicio lo nuevo*/
+.border-v{
+    background: #d2cece;
+    height: auto;
+    width: 1px;
+}
+
+.btn-radio .active:focus{
+    box-shadow: none;
+}
+.btn-radio label:focus{
+    box-shadow: none;
+}    
+.btn-radio label{
+    border-radius: 10px !important;
+    border: 1px solid #dfdede;
+} 
+.btn-radio .active{
+    background: #D8143B;
+    border-style: #D8143B !important;
+    color: #fff;
+}
+.btn-radio .btn.focus, .btn:focus{
+    box-shadow: none;
+}
+
+.rounded-info-d{
+    border-radius: 10px !important;
+}
+.font24-px{
+    font-size: 24px;
+}
+.font25-px-m-d{
+    font-size: 24px;
+}
+.img-columpio {
+    z-index: -1;
+    margin-top: -78px;
+}
+.btn-login-facebook{
+    background: #2B73B5 !important;
+    color: #fff;
+}
+@media (max-height: 768px) {
+    .font25-px-m-d {
+        font-size: 17px;
+    }
+}
+
+/** Aqui finaliza lo nuevo*/
+
 .side-nav .collapsible {
   padding: 0;
   margin: 0;
