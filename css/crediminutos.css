@@ -12836,6 +12836,25 @@ span[data-jarallax-element] {
     background: #2B73B5 !important;
     color: #fff;
 }
+.desplegable-card-border{
+    border-radius: 10px !important;
+}
+.desplegable-card-header{
+    background: #d8143b !important;
+    color: white !important;
+    border-radius: 10px !important;
+}
+.desplegable-card-header button {
+    color: white !important;
+}
+label.btn.prevent.m-0.col-12.align-items-center.d-flex.px-3.waves-effect.waves-light.active {
+    background: #d8143b;
+    color: white;
+    border-radius: 10px;
+}
+.prevent {
+    color: #6c6c6c;
+}
 @media (max-height: 768px) {
     .font25-px-m-d {
         font-size: 17px;
