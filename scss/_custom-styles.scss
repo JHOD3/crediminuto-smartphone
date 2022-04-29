@@ -635,6 +635,20 @@ input:disabled{
     margin-top: 10vh;
     height: 50vh;
 }
+.img-2 {
+    margin-top: 5.5vh;
+    height: 42vh;
+}
+.line-height-22-px{
+    line-height: 22px;
+}
+.raya{
+    height: 4px;
+    width: 50px;
+    background: #c22645;
+    border-radius: 20px;
+}
+
 
 .select-wrapper span.caret {
     position: absolute;
@@ -730,9 +744,19 @@ input:disabled{
     height: 100vh;
     overflow: auto;
 }
+.ul-list li{
+    background: url("../img/svg/check-red-1.svg") no-repeat left 7px;
+    padding: 5px 10px 5px 40px;
+    list-style: none;
+    margin: 0;
+    vertical-align: middle;
+}
 @media (max-width: 768px){
     .img-mueble {
         width: 80vw;
+    }
+    .font-size-18-px-m{
+        font-size: 18px;
     }
     .content-aceptada{
         overflow-y: auto;
@@ -822,7 +846,7 @@ input:disabled{
         margin: 0;
     }
     .modal-dialog .modal-content{
-        border-radius: 20px 20px 0px 0px;
+        border-radius: 40px 40px 0px 0px;
     }
     .lateral-bar-0 {
         background-position: center 67vh;

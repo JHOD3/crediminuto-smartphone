@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crediminuto</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Select 2 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/select2-bootstrap.css">
+    <!-- Crediminutos -->
+    <link rel="stylesheet" href="css/crediminutos.css">
+</head>
+
+<body>
+
+
+<main>
+    
+    <div class="d-md-flex">
+        <div class="col-md-5 lateral-bar px-0 d-md-block d-none" id="inicio-form">
+            <div class="border-bottom col-md-9 mx-auto d-md-none d-block">
+                <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-block">
+            </div>
+            <h4 class="text-danger inicio-text-2 text-md-center mt-md-5 pt-md-3 font-weight-bold">
+                ¡Valida tu identidad!
+            </h4>
+            <div>
+                <img src="img/svg/men-phone-2.svg" alt="" class="mx-md-auto img-2 d-block">
+            </div>
+            <div class="d-md-none d-block text-center pt-2">
+                <button class="btn btn-danger btn-rounded col-8 d-block mx-auto position-absolute botton-btn left-0 right-0" id="btn-comencemos">¡Comencemos!</button>
+            </div>
+        </div>
+        <div class="col-md-7 content-aceptada" id="inicio-content">
+            <div class="border-bottom col-md-9 mx-auto d-md-none d-block">
+                <a href="">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-md-none d-block">
+            </div>
+            <div class="border-bottom col-md-9 mx-auto d-none d-md-block">
+                <embed src="img/svg/logo-movil-2.svg" type="" class="logo mx-auto d-block">
+            </div>
+            <div class="text-center content-title">
+                <img src="img/svg/scan-face.svg" class="mb-md-4" alt="" width="100">
+                <h4 class="text-danger mt-md-0 mt-md-5 mt-3 font-size-18-px-m">
+                    To make the most out of <br class="d-md-none d-block"> your <br class="d-md-block d-none"> account, we just<br class="d-md-none d-block"> need to verify
+                </h4>
+            </div>
+            <div class="raya mx-auto my-4"></div>
+            <div class="text-center col-md-8 mx-auto">
+                <p class="font18-px font-weight-bolder">Verify me using my banking details</p>
+                <div class="font12-px">
+                    Consectetuer adipiscing elit, sed diam nonummy nibh <br> 
+                    euismod tincidunt ut laoreet dolore magna aliquam erat <br> 
+                    volutpat. Ut wisi enim ad minim veniam, quis 
+                </div>
+                <div class="d-flex justify-content-center mt-md-5 mt-4"> 
+                    <i class="fas fa-chevron-right text-primary mt-1 font16-px"></i>
+                    <div class="ml-2 pl-md-1 text-left line-height-22-px">
+                        <div class="text-primary">Privacidad</div>
+                        <a href="" class="font12-px">
+                            <u>Ver mas</u>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="justify-content-center mt-md-5 d-none d-md-flex">
+                <a class="btn btn-danger btn-rounded col-6 mx-auto position-absolute botton-btn left-0 right-0 validar-identidad">Validar identidad</a>
+            </div>
+            <!-- Modal Small -->
+            <div class="modal modal-side fade" id="modalvalidate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <!-- Change class .modal-sm to change the size of the modal -->
+                <div class="modal-dialog modal-dialog-centered-md modal-dialog-m" role="document">
+                    <div class="modal-content container px-md-5 py-md-4">
+                        <div class="modal-header border-bottom-0">
+                            <h5 class="text-primary">
+                                Openbanking
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="font30-px">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="ul-list">
+                                <li class="font16-px">Tus credenciales están encriptadas y no serán almacenadas</li>
+                                <li class="font16-px my-md-2">Ut wisi enim ad minim veniam, quis nostrud exerci tation</li>
+                                <li class="font16-px">Duis autem vel eum iriure dolor in hendrerit</li>
+                            </ul>
+                            <a href="indentidad-validada.html" class="btn btn-danger col-md-5 btn-rounded mt-md-3">Entendido</a>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Small -->
+        </div>
+        <!-- OJO Botones Moviles -->
+        <div class="justify-content-center position-absolute d-md-none d-block" style="left: 0;right: 0;bottom: 5vh;">
+            <a href="" class="btn btn-danger btn-rounded col-10 py-2 d-block mx-auto validar-identidad"  type="button" >Validar identidad</a>
+        </div>
+        
+    </div>    
+</main>
+
+
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- jquery validator -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" ></script>
+<!-- Select 2 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/js/select2.full.min.js"></script>
+<!-- Libreria español -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/i18n/es.js"></script>
+<!-- Validation -->
+<script src="js/crediminuto-validaciones.js"></script>
+<script src="js/validar-modal.js"></script>
+
+</body>
+</html>
